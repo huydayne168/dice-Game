@@ -84,7 +84,6 @@ button:hover {
 
 #dice {
     margin-top: 20px;
-    background: url("../asset/images/dice-1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
