@@ -27,12 +27,12 @@ const game = {
     playerPlayingTotalPointEl: player1TotalPoint,
 
     diceList: [
-        'url("./asset/images/dice-1.png")',
-        'url("./asset/images/dice-2.png")',
-        'url("./asset/images/dice-3.png")',
-        'url("./asset/images/dice-4.png")',
-        'url("./asset/images/dice-5.png")',
-        'url("./asset/images/dice-6.png")',
+        'url("asset/images/dice-1.png")',
+        'url("asset/images/dice-2.png")',
+        'url("asset/images/dice-3.png")',
+        'url("asset/images/dice-4.png")',
+        'url("asset/images/dice-5.png")',
+        'url("asset/images/dice-6.png")',
     ],
 
     renderDice: function () {
