@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap");
+
+* {
+    transition: all ease 300ms;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9afd9;
+    background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+}
+
+main .container {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.player {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 66px;
+    background-color: #c9eeff;
+    opacity: 0.6;
+}
+
+/* playing or not playing css */
+.playing {
+    background-color: #62cdff;
+    opacity: 1;
+}
+
+#buttons {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#roll,
+#dice,
+#new-game,
+#hold {
+    background-color: #fff;
+    border: none;
+    padding: 7px 25px;
+    font-size: 22px;
+    border-radius: 999px;
+    color: #444;
+}
+
+button:hover {
+    transform: scale(0.98) translateY(6%);
+    cursor: pointer;
+}
+
+#new-game {
+    margin-top: 60px;
+}
+
+#dice {
+    margin-top: 20px;
+    background: url("../asset/images/dice-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+}
+
+#roll {
+    margin-top: 180px;
+}
+
+#hold {
+    margin-top: 16px;
+}
+
+.player__name {
+    margin-bottom: 24px;
+    font-size: 40px;
+}
+
+.total-point {
+    font-size: 42px;
+    margin-bottom: 300px;
+}
+
+.current-wrapper {
+    padding: 28px 40px;
+    background-color: #97deff;
+    border-radius: 8px;
+}
+
+.current-wrapper p {
+    margin-bottom: 12px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.current-point {
+    font-size: 32px;
+}
+
+/* === alert the winner CSS === */
+#alert-winner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff75;
+}
+
+#alert-winner .container {
+    padding: 150px 100px;
+    background-color: #aa77ff;
+    font-size: 32px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
